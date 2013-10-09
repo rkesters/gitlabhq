@@ -30,7 +30,7 @@ gem "gitlab_git", "~> 3.0.0.rc2"
 gem 'gitlab-grack', '~> 1.0.1', require: 'grack'
 
 # LDAP Auth
-gem 'gitlab_omniauth-ldap', '1.0.3', require: "omniauth-ldap"
+gem 'gitlab_omniauth-ldap', require: "omniauth-ldap" , :git => "https://github.com/rkesters/gitlab_omniauth-ldap.git" , :branch => "ldap-lowercase"
 
 # Syntax highlighter
 gem "gitlab-pygments.rb", '~> 0.3.2', require: 'pygments.rb'
