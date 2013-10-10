@@ -6,6 +6,17 @@ GIT
       activerecord (>= 2.3.0)
       rake (>= 0.8.7)
 
+GIT
+  remote: https://github.com/rkesters/gitlab_omniauth-ldap.git
+  revision: fd169cf790af92b5f40137b5675a2880b3c06913
+  branch: ldap-lowercase
+  specs:
+    gitlab_omniauth-ldap (1.0.2)
+      net-ldap (~> 0.2.2)
+      omniauth (~> 1.0)
+      pyu-ruby-sasl (~> 0.0.3.1)
+      rubyntlm (~> 0.1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -184,11 +195,6 @@ GEM
       github-linguist (~> 2.3.4)
       gitlab-grit (~> 2.6.0)
     gitlab_meta (6.0)
-    gitlab_omniauth-ldap (1.0.3)
-      net-ldap (~> 0.3.1)
-      omniauth (~> 1.0)
-      pyu-ruby-sasl (~> 0.0.3.1)
-      rubyntlm (~> 0.1.1)
     gon (4.1.1)
       actionpack (>= 2.3.0)
       json
@@ -282,7 +288,7 @@ GEM
     multi_xml (0.5.4)
     multipart-post (1.2.0)
     mysql2 (0.3.11)
-    net-ldap (0.3.1)
+    net-ldap (0.2.2)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-ssh (2.6.8)
@@ -574,7 +580,7 @@ DEPENDENCIES
   gitlab-pygments.rb (~> 0.3.2)
   gitlab_git (= 2.3.1)
   gitlab_meta (= 6.0)
-  gitlab_omniauth-ldap (= 1.0.3)
+  gitlab_omniauth-ldap!
   gon
   grape (~> 0.4.1)
   grape-entity (~> 0.3.0)
