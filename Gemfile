@@ -8,6 +8,7 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
+ruby "1.9.3"
 gem "rails", "3.2.13"
 
 # Supported DBs
