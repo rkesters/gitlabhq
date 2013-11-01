@@ -49,7 +49,10 @@ module Gitlab
         end
 
         def email
-          auth.info.email.downcase unless auth.info.email.nil?
+          return auth.info.email.downcase unless auth.info.email.nil?
+          if @auth.info.email.nil? and not Gitlab.config.ldap['email_domain'].nil?
+            @auth.extra.raw_info.samaccountname[0].downcase + "@" + Gitlab.config.ldap['email_domain'].downcase
+          end
         end
 
         def name
