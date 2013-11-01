@@ -19,7 +19,7 @@ GIT
       pyu-ruby-sasl (~> 0.0.3.1)
       rubyntlm (~> 0.1.1)
 
->>>>>>> updated gem lock file
+>>>>>>> origin/ldap-groups
 GEM
   remote: https://rubygems.org/
   specs:
